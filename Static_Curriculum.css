@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@page {
+    size: A4;
+    margin: 0;
+  }
+  @media print {
+    html, body {
+      width: 210mm;
+      height: 297mm;
+    }
+    footer{
+      height: 30px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-image:url("https://www.cato.org/sites/cato.org/files/styles/optimized/public/2021-01/GettyImages-1226985345.jpg?itok=NPJoOzhg");
+      justify-content: flex-end;
+      display: flex;
+      align-items: center; 
+    }
+    footer a{
+      font-weight: bold;
+      font-size: 16px;
+      color: ivory;
+      padding: 10px;
+    }
+  }
+  @media screen {
+    footer{
+      display: none;
+    }
+  }
+body{
+    margin: 0px 0px;  
+    font-family: 'Century Gothic','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+}
+.main_conteiner{
+    display: flex;
+    align-items: center;
+}
+
+
+/*<Header Classes>*/
+.cv_header{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    /*background-color: rgb(130 156 171);*/
+    flex-direction: column;
+    background-image:url("https://www.cato.org/sites/cato.org/files/styles/optimized/public/2021-01/GettyImages-1226985345.jpg?itok=NPJoOzhg");
+}
+.profile_img_conteiner{
+    border-radius: 60px;
+    width: 120px;
+    height: 120px;
+    background-color: rgb(255, 255, 255);
+    margin: 0px 37px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: lightgray;
+}
+.profile_img_conteiner img{
+  max-width:100%;
+  max-height:100%;
+  border-radius: 50%;
+}
+.centerd_info_conteiner{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 450px;
+    align-items: center;
+}
+.centerd_name{
+  display: flex;
+  width: 450px;
+  height: 50px;
+  position: absolute;
+  top: 100px;
+  background-color: rgb(64 113 177);
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.centerd_name h2{
+    text-align: center;
+    font-family: 'Century Gothic','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0px;
+    color: rgb(255, 255, 255);
+}
+.header_footer{
+    display: flex;
+    height: 55px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+}
+.profile_info{
+  font-family:'Century Gothic' ;
+   display: flex;
+   padding: 5px 5%;
+   border-bottom-style: solid;
+   border-width: 2px; 
+   border-color: black;
+   color: black;
+   align-items: flex-end;
+}
+.social_midia_links_container{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.social_midia_links_container ul{
+  list-style: none;
+  display: inline-flex;
+  margin-right: 15px;
+}
+.social_midia_links_container li{
+  padding-left: 5px;
+  max-width: 60px;
+  height: 60px;
+}
+.social_midia_links_container img{
+  height: 100%;
+}
+/*</Header Classes>*/
+
+
+/*<Main Classes>*/
+.sumary_container{
+  display: flex;
+  margin: 0% 5%;
+  border-width: 1px;
+  border-bottom-style: solid;
+  padding: 10px 15px;
+  text-align: left;
+  font-size: 12px;
+}
+.left_conteiner{
+  width: 25%;
+  margin: 10px 0px;
+  padding: 0px 20px;
+  border-right-style: solid;
+  border-width: 1px;
+  padding-bottom: 40px;
+}
+.rigth_conteiner{
+  width: 75%;
+  margin: 10px 0px;
+  padding: 10px 20px;
+}
+.experience_container{
+  display: flex;
+}
+/*<Left Conteiner>*/
+.skill-list{
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.skill_list_item{
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0px;
+}
+.skill_list_header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.skill_logo{
+  height: 30px;
+  align-content: center;
+  padding: 2px;
+}
+.skill_logo_container{ 
+  display: flex;
+  width: 40px;
+  justify-content: center;
+}
+.skill_list_detail{
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-around;
+}
+.skill_percentage_bar{
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  display: flex;
+  position: relative;
+  height: 5px;
+  width: 76%;
+}
+.skill_percentage_completion{
+  border-radius: inherit;
+  background-color: #86c768;
+  height: 100%;
+}
+.skill_percentage_completion_detail{
+  position: absolute;
+  border-right-style: dashed;
+  border-right-width: 1px;
+  text-align: right;
+  padding-top: 6px;
+  padding-right: 2px;
+  font-size: 8px;
+}
+.skill_percentage_completion_detail p,
+.skill_percentage_completion_detail a{
+  margin: 0px;
+  padding: 2px 0px;
+}
+/*</Left Conteiner>*/
+
+/*<Right Conteiner>*/
+h6 small{
+  font-style: normal;
+  font-weight: normal;
+}
+.main_subsection{
+  margin: 0px 20px;
+  border-bottom-style: solid;
+  border-width: 1px;
+  padding: 10px 5px;
+}
+.enterprise_list{
+  list-style: none;
+  margin-block: 0px;
+  padding-left: 10px;
+}
+.enterprise_exp_container{
+  display: flex;
+  flex-direction: column;
+}
+.enterprise_exp_container h5 ,.enterprise_exp_container h6{
+  margin: 2px;
+}
+.enterprise_roles_list{
+  border-width: 1px;
+  border-left-style: dashed ;
+  margin: 0px 10px;
+  padding-left: 12px;
+  list-style:square;  
+}
+
+.academic_roles_list{
+  margin: 0px 10px;
+  padding-left: 12px;
+  list-style:none;  
+}
+
+.main_subsection p{
+  padding: 3px;
+  margin:0px ;
+  font-size: 9px;
+}
+.main_subsection h3{
+  padding: 0px;
+  margin: 10px;
+}
+.academic_course p{
+  font-size:12px;
+}
+/*</Right Conteiner>*/
+
+ /*</Main Classes>*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+  
