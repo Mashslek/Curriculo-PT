@@ -14,7 +14,7 @@
       left: 0;
       bottom: 0;
       width: 100%;
-      background-image:url("https://www.cato.org/sites/cato.org/files/styles/optimized/public/2021-01/GettyImages-1226985345.jpg?itok=NPJoOzhg");
+      background-image:url("https://images.unsplash.com/photo-1533035353720-f1c6a75cd8ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&w=1000&q=80");
       justify-content: flex-end;
       display: flex;
       align-items: center; 
@@ -22,8 +22,9 @@
     footer a{
       font-weight: bold;
       font-size: 16px;
-      color: ivory;
+      color: rgb(0, 0, 0);
       padding: 10px;
+      font-style: None;
     }
   }
   @media screen {
@@ -40,7 +41,9 @@ body{
     align-items: center;
 }
 
-
+a{
+  color:rgb(65, 109, 192)
+}
 /*<Header Classes>*/
 .cv_header{
     display: flex;
@@ -48,7 +51,7 @@ body{
     padding-top: 20px;
     /*background-color: rgb(130 156 171);*/
     flex-direction: column;
-    background-image:url("https://www.cato.org/sites/cato.org/files/styles/optimized/public/2021-01/GettyImages-1226985345.jpg?itok=NPJoOzhg");
+    background-image:url("https://images.unsplash.com/photo-1533035353720-f1c6a75cd8ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&w=1000&q=80");
 }
 .profile_img_conteiner{
     border-radius: 60px;
@@ -78,7 +81,7 @@ body{
   height: 50px;
   position: absolute;
   top: 100px;
-  background-color: rgb(64 113 177);
+  background-color: rgb(0 0 0);
   border-radius: 10px;
   align-items: center;
   justify-content: center;
@@ -164,7 +167,7 @@ body{
 .skill_list_item{
   display: flex;
   flex-direction: column;
-  padding: 20px 0px;
+  padding: 10px 0px;
 }
 .skill_list_header{
   display: flex;
@@ -173,6 +176,11 @@ body{
 }
 .skill_logo{
   height: 30px;
+  align-content: center;
+  padding: 2px;
+}
+.certificate_badge{
+  height: 50px;
   align-content: center;
   padding: 2px;
 }
@@ -197,7 +205,7 @@ body{
 }
 .skill_percentage_completion{
   border-radius: inherit;
-  background-color: #86c768;
+  background-color: #8fc44a;
   height: 100%;
 }
 .skill_percentage_completion_detail{
@@ -254,13 +262,13 @@ h6 small{
 }
 
 .main_subsection p{
-  padding: 3px;
+  padding: 1px;
   margin:0px ;
   font-size: 9px;
 }
 .main_subsection h3{
   padding: 0px;
-  margin: 10px;
+  margin: 5px;
 }
 .academic_course p{
   font-size:12px;
